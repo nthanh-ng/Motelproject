@@ -1,0 +1,171 @@
+<!-- START FILL FORM -->
+<div class="fillform">
+    <div class="form_container" (ngSubmit)="onSubmit(userForm.value)" >
+        <form #userForm="ngForm" >
+            {{userForm.value | json}}
+            <h3>Tiêu đề bài viết</h3>
+            <div class="form_control">
+                <label for="title">Tiêu đề</label>
+                <input size=100px class="fillin" name="title" type="text" placeholder="Mô tả phòng trọ" ngModel>
+            </div>
+            <h3>Điền thông tin liên hệ</h3>
+            <div class="form_control">
+                <label for="name">Họ tên</label>
+                <input size=20px class="fillin" name="name" type="text" placeholder="Họ tên" ngModel>
+            </div>
+            <div class="form_control">
+                <label for="phonenumber">Số điện thoại</label>
+                <input size=10px class="fillin" name="phonenumber" type="text" placeholder="Số điện thoại" ngModel>
+            </div>
+            <div class="form_control">
+                <label for="email">Email</label>
+                <input size=25px class="fillin" name="email" type="text" placeholder="Email" ngModel>
+            </div>
+
+            <h3>Thông tin phòng trọ</h3>
+            <div class="form_control">
+                <label for="street">Đường</label>
+                <input size=10px class="fillin" name="street" type="text" placeholder="97 Võ Văn Tần" ngModel>
+            </div>
+            <div class="form_control">
+                <label for="district">Quận/Huyện</label>
+                <select class="fillin" id="district" name="district" ngModel>
+                    <option class="fillin" value="1">Quận 1</option>
+                    <option class="fillin" value="1">Quận 2</option>
+                    <option class="fillin" value="1">Quận 3</option>
+                    <option class="fillin" value="1">Quận 4</option>
+                    <option class="fillin" value="1">Quận 5</option>
+                    <option class="fillin" value="1">Quận 6</option>
+                    <option class="fillin" value="1">Quận 7</option>
+                    <option class="fillin" value="1">Quận 8</option>
+                    <option class="fillin" value="1">Quận 9</option>
+                    <option class="fillin" value="1">Quận 10</option>
+                    <option class="fillin" value="1">Quận 11</option>
+                    <option class="fillin" value="1">Quận Phú Nhuận</option>
+                    <option class="fillin" value="1">Quận Gò Vấp</option>
+                    <option class="fillin" value="1">Quận Tân Bình</option>
+                </select>
+            
+
+                <!-- CÁC PHƯỜNG -->
+            <div class="form_control">
+                    <label for="ward">Phường/Xã</label>
+                    <input size=20px class="fillin" list="ward" name="ward" ngModel>
+                    <datalist id="ward">
+                        <option value="Bến Nghé">
+                        <option value="Bến Thành">
+                        <option value="Cầu Kho">
+                        <option value="Phạm Ngũ Lão">
+                        <option value="Cầu Ông Lãnh">
+                        <option value="Cô Giang">
+                        <option value="Đa Kao">
+                        <option value="Nguyễn Cư Trinh">
+                        <option value="Nguyễn Thái Bình">
+                        <option value="An Khánh">
+                        <option value="An Lợi Đông">
+                        <option value="An Phú">
+                        <option value="Bình An">
+                        <option value="Bình Khánh">
+                        <option value="Bình Trung Đông">
+                        <option value="Bình Trung Tây">
+                        <option value="Cát Lái">
+                        <option value="Thạnh Mỹ Lợi">
+                        <option value="Thảo Điền">
+                        <option value="Thủ Thiêm">
+                        <option value="Phường 1">
+                        <option value="Phường 2">
+                        <option value="Phường 3">
+                        <option value="Phường 4">
+                        <option value="Phường 5">
+                        <option value="Phường 6">
+                        <option value="Phường 7">
+                        <option value="Phường 8">
+                        <option value="Phường 9">
+                        <option value="Phường 10">
+                        <option value="Phường 11">
+                        <option value="Phường 12">
+                        <option value="Phường 13">
+                        <option value="Phường 14">
+                        <option value="Phường 15">
+                        <option value="Phường 16">
+                        <option value="Phường 17">
+                        <option value="Phường 18">
+                        <option value="Phường 19">
+                        <option value="Phường 20">
+                        <option value="Phường 21">
+                        <option value="Phường 22">
+                        <option value="Phường 23">
+                        <option value="Phường 24">
+                        <option value="Phường 25">
+                        <option value="Phường 26">
+                        <option value="Phường 27">
+                        <option value="Phường 28">
+                        <option value="Bình Thuận">
+                        <option value="Phú Mỹ">
+                        <option value="Phú Thuận">
+                        <option value="Tân Hưng">
+                        <option value="Tân Kiểng">
+                        <option value="Tân Phong">
+                        <option value="Tân Phú">
+                        <option value="Tân Quy">
+                        <option value="Tân Thuận Đông">
+                        <option value="Tân Thuận Tây">
+                        <option value="Hiệp Phú">
+                        <option value="Long Bình">
+                        <option value="Long Phước">
+                        <option value="Long Thạnh Mỹ">
+                        <option value="Long Trường">
+                        <option value="Phú Hữu">
+                        <option value="Phước Bình">
+                        <option value="Phước Long A">
+                        <option value="Phước Long B">
+                        <option value="Tăng Nhơn Phú A">
+                        <option value="Tăng Nhơn Phú B">
+                        <option value="Tân Phú">
+                        <option value="Trường Thạnh">
+
+                    </datalist>
+            </div>
+
+            <div class="form_control">
+                    <label for="space">Diện tích(m<sup>2</sup>)</label>
+                    <input class="fillin" name="space" type="text" placeholder="Diện tích" ngModel>
+                </div>
+            <div class="form_control">
+                    <label for="amenities">Tiện ích</label>
+                    <input class="fillin" name="amenities" id="amenities" type="text" placeholder="Tiện ích" ngModel>
+                </div>
+
+            <div class="form_control">
+                <label for="amenities">Mô tả phòng trọ</label>
+                <input class="fillin" size=50px name="description" id="description" type="text" placeholder="Mô tả" ngModel>
+            </div>
+
+            <div class="form_control">
+                    <label for="curfew">Giờ giới nghiêm</label>
+                    <select class="fillin" id="district" name="district" ngModel>
+                        <option class="fillin" value="1">10:00 PM</option>
+                        <option class="fillin" value="1">11:00 PM</option>
+                        <option class="fillin" value="1">12:00 PM</option>
+                        <option class="fillin" value="1">1:00 AM</option>
+                        <option class="fillin" value="1">Không giới hạn</option>
+                    </select>
+            <div class="form_control">
+                    <label for="motelimage">Hình ảnh nhà trọ</label>
+                 </div>
+         </div>
+              
+            <div class="custom-dropzone" ngx-dropzone [accept]="'image/*'" (change)="onSelect($event)" ngModel>
+                <ngx-dropzone-label>
+                    <div>
+                        <h2 class="add-image">Thêm ảnh tại đây</h2>
+                    </div>
+                </ngx-dropzone-label>
+                <ngx-dropzone-image-preview ngProjectAs="ngx-dropzone-preview" *ngFor="let f of files" [file]="f" [removable]="true"
+                    (removed)="onRemove(f)">
+                </ngx-dropzone-image-preview>
+            </div>
+                
+                <div class="button_container">       
+                <button class="submit" (click)="add()" type="button">Hoàn thành </button> 
+                </div>

@@ -1,0 +1,83 @@
+body {
+	font-family: 'montserrat', sans-serif;
+	background-color: #F2F3F5;
+	min-height: 100vh;
+	display: grid;
+	place-items: center;
+}
+.form-label, .signup-heading, .form-submit{
+    font-family: 'montserrat';
+
+}
+.signup-already{
+    text-align: center;
+    font-family: 'montserrat';
+}
+* {
+	box-sizing: border-box;
+}
+.signup-heading{
+	text-align: center;
+	font-size:2.3rem;
+}
+
+.signup {
+	padding: 20px 60px;
+	background-color: #e9e7e7;
+	border-radius: 3px;
+	width: 100%;
+    max-width: 480px;
+    margin-left: 37.5%;
+    margin-top:30px;
+    margin-bottom: 30px;
+    }
+.form-group {
+	margin-bottom: 25px;
+}
+.form-label {
+	display: inline-block;
+	cursor: pointer;
+	color: #363A40;
+	margin-bottom: 15px;
+	font-size: 1.2rem;
+}
+.form-input {
+	display: block;
+	width: 100%;
+	padding: 20px;
+	border-radius: 15px;
+	border: 0;
+	outline: none;
+	font-family: montserrat;
+	background-color: #F2F3F5;
+	color: #363A40;
+	font-size: 16px;
+}
+
+.form-submit {
+	display: block;
+	margin-top: 45px;
+	width: 100%;
+	padding: 20px;
+	color: white;
+	text-align: center;
+	cursor: pointer;
+	border: 0;
+	border-radius: 15px;
+	background-color: #81C91D;
+	font-size: 16px;
+	font-weight: 500;
+	margin-bottom: 20px;
+	box-shadow: 0 10px 20px -5px rgba(#81C91D, 0.9);
+	outline: none;
+}
+
+.form-submit:hover{
+    transition: all 0.5s ease-in-out;
+    background-color: #629e0d;
+}
+@media screen and (max-width: 767px) {
+	.signup {
+		padding: 30px 20px;
+	}
+}

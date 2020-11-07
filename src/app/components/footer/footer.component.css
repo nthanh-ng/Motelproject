@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  font-family: montserrat;
+  box-sizing: border-box;
+}
+/* START FOOTER */
+
+.footer_content{
+  background-color:bisque;
+  display:flex;
+  height: 210px;
+  padding-top: 1.3rem;
+}
+
+.footer1{
+  font-size: 0.2rem;
+  width:30%;
+  padding-left:170px;
+}
+
+.footer1 > p{
+  letter-spacing: 0.3px;
+}
+
+.footer2{
+  width:33%;
+  padding-left:4rem;
+}
+
+.footer2 ul li{
+  padding-top: 20px;
+  font-size:1.1rem;
+  list-style:none;
+  display:flex;
+  letter-spacing:0.3px;
+}
+
+p{
+  font-size:1rem;
+}
+.footer2 ul li a{
+  text-decoration:none; 
+}
+
+.footer3{
+  font-size: 2rem;
+  width:33%;
+}
+
+
+.student{
+  padding: 20px 0 15px 0; 
+  font-size:1.1rem;
+}
+
+.footer1_span{
+  padding: 20px 30px 15px 0;
+  font-size:1.1rem;
+  word-spacing: 1px;
+}
+.footer_header{
+  font-size:2rem;
+}
+.footer3{
+    padding-right: 50px;
+}
+.footer3 > .teacher{
+  padding-right: 10px;
+}
+/* END FOOTER */

@@ -1,0 +1,6 @@
+<body>
+  <app-header *ngIf="router.url !== '/admin'"></app-header>
+  <router-outlet></router-outlet>
+  <app-footer *ngIf="router.url !== '/find' && router.url !== '/lease' && router.url !== '/login' && router.url !== '/register'
+  && router.url !== '/admin'"></app-footer>
+</body>
